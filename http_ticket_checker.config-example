@@ -1,0 +1,7 @@
+DEBUG = True
+USE_X_SENDFILE = False
+FILE_DIR = "/home/adam/src/http-ticket-checker/files"
+BACKEND = "http://alhena:7950/ticket-system-service/tickets/resolveTicket/<ticket>"
+BACKEND = "memcached://alhena:11211"
+CONTENT_TYPE = "Thumbnails"
+PREFIX = "images"

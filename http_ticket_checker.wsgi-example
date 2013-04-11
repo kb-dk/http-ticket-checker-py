@@ -1,0 +1,13 @@
+import os, sys, site
+
+config_location = '/home/adam/src/http-ticket-checker/http_ticket_checker.config'
+site.addsitedir('/home/adam/src/http-ticket-checker/lib/python2.7/site-packages')
+
+sys.path.insert(0, '/home/adam/src/http-ticket-checker')
+
+
+## no need to edit below this point
+
+os.environ['HTTP_TICKET_CHECKER_CONFIG'] = config_location
+
+from http_ticket_checker import app as application
